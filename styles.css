@@ -1,9 +1,8 @@
-/* styles.css */
-
 /* Reset default margin and padding */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước phần tử */
 }
 
 /* Global styles */
@@ -11,8 +10,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -30,41 +31,39 @@ nav a {
     text-decoration: none;
 }
 
-
+/* Main content styles */
 .places {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Canh giữa các cột */
 }
 
 .places > div {
-    width: calc(20% - 20px); /* Định kích thước mỗi ô, 20% là 1/5 phần, trừ đi khoảng cách giữa các ô */
-    margin-right: 20px; /* Khoảng cách giữa các ô */
-    margin-bottom: 20px; /* Khoảng cách dưới */
-    border: 1px solid #ccc; /* Viền */
-    padding: 10px; /* Khoảng cách bên trong */
+    width: calc(20% - 20px); /* 20% chiều rộng mỗi cột, trừ đi khoảng cách */
+    margin-bottom: 20px;
+    background-color: #fff; /* Màu nền cho mỗi ô */
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho mỗi ô */
+    border-radius: 5px;
 }
 
 .places h3 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .places h4 {
     font-size: 14px;
+    color: #666;
     line-height: 1.5;
 }
 
-
-/* Adjust styles for images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Adjust styles for footer */
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    text-align: left;
 }
 
 .contact-us, .about-us, .products {
@@ -86,24 +85,77 @@ footer {
     margin-bottom: 5px;
 }
 
-
-.features {
-    display: flex;
-    flex-wrap: wrap;
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .places > div {
+        width: calc(50% - 20px); /* Hai cột trên mỗi hàng trên màn hình nhỏ hơn */
+    }
 }
 
-.features > div {
-    width: calc(25% - 20px); /* Định kích thước mỗi ô, 25% là 1/4 phần, trừ đi khoảng cách giữa các ô */
-    margin-right: 20px; /* Khoảng cách giữa các ô */
-    margin-bottom: 20px; /* Khoảng cách dưới */
-    text-align: center; /* Canh giữa nội dung */
+@media screen and (max-width: 576px) {
+    .places > div {
+        width: calc(100% - 20px); /* Một cột trên mỗi hàng trên màn hình rất nhỏ */
+    }
+
+    nav li {
+        display: block; /* Hiển thị các mục menu dưới dạng danh sách thay vì dạng inline */
+        margin: 5px 0;
+    }
 }
 
-.features img {
-    max-width: 25%; /* Hình ảnh chứa trong ô */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Kích thước hình ảnh nhỏ hơn */
+.places img {
+    max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
     height: auto; /* Đảm bảo tỷ lệ khung hình */
 }
 
-.features p {
-    margin-top: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+.features img {
+    max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+}
+
+.contact-us img {
+    width: 25px; /* hoặc bất kỳ giá trị nào phù hợp */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+}
+
+.features {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-around; /* Canh giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.features > div {
+    text-align: center; /* Canh giữa nội dung */
+    flex: 1; /* Phần tử co giãn để lấp đầy không gian */
+    margin: 0 10px; /* Khoảng cách giữa các phần tử */
+}
+
+
+nav a:hover {
+    color: #ffc107; /* Đổi màu chữ khi rê chuột vào */
+    text-decoration: underline; /* Gạch chân chữ khi rê chuột vào */
+}
+
+/* Đổi màu nền của menu khi rê chuột vào */
+nav a:hover {
+    background-color: #555; /* Đổi màu nền */
+}
+/* Hiệu ứng hover cho mỗi phần trên navbar */
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px; /* Thêm padding để tạo box */
+    background-color: #333; /* Màu nền mặc định */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+/* Đổi màu nền của box khi rê chuột vào */
+nav li:hover {
+    background-color: #555; /* Đổi màu nền khi rê chuột vào */
 }
