@@ -15,19 +15,30 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(30, 160, 200);
+    color: #ffff00;
     padding: 10px;
     text-align: center;
+    border-radius: 10px;
+}
+
+nav {
+   background-color: rgb(30, 160, 200);
+   border-radius: 10px;
+
 }
 
 nav li {
-    display: inline;
     margin: 0 10px;
+    background-color: rgb(30, 160, 200);
+    list-style-type: none; /* Loại bỏ kiểu điểm nhấn của danh sách */
+    display: inline-block; /* Để các mục nằm trên cùng một dòng */
+    padding: 10px;
+    border-radius: 10px;
 }
 
 nav a {
-    color: #fff;
+    color: #ffff00;
     text-decoration: none;
 }
 
@@ -66,22 +77,22 @@ footer {
     text-align: left;
 }
 
-.contact-us, .about-us, .products {
+.contact-us, .about-us, .products, .others {
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
 }
 
-.contact-us ul, .about-us ul, .products ul {
+.contact-us ul, .about-us ul, .products ul, .others li {
     list-style: none;
     padding: 0;
 }
 
-.contact-us h4, .about-us h4, .products h4 {
+.contact-us h4, .about-us h4, .products h4, .others li {
     margin-bottom: 10px;
 }
 
-.contact-us li, .about-us li, .products li {
+.contact-us li, .about-us li, .products li , .others li{
     margin-bottom: 5px;
 }
 
@@ -138,24 +149,82 @@ img {
 
 
 nav a:hover {
-    color: #ffc107; /* Đổi màu chữ khi rê chuột vào */
+    color: #ffffff; /* Đổi màu chữ khi rê chuột vào */
     text-decoration: underline; /* Gạch chân chữ khi rê chuột vào */
 }
 
-/* Đổi màu nền của menu khi rê chuột vào */
-nav a:hover {
-    background-color: #555; /* Đổi màu nền */
-}
 /* Hiệu ứng hover cho mỗi phần trên navbar */
 nav li {
     display: inline-block;
     margin: 0 10px;
     padding: 10px 20px; /* Thêm padding để tạo box */
-    background-color: #333; /* Màu nền mặc định */
     transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
 }
-
-/* Đổi màu nền của box khi rê chuột vào */
-nav li:hover {
-    background-color: #555; /* Đổi màu nền khi rê chuột vào */
+ 
+div.hotline {
+    color: #ffff00; /* Đặt màu chữ để dễ đọc */
+    padding: 10px; /* Thêm khoảng cách nội dung */
+    text-align: center;
+    border-radius: 10px;
 }
+
+.ticket-search {
+    background-color: rgb(30, 160, 200);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.ticket-search {
+font-weight: bold;
+ }
+
+ .ticket-search label{
+font-weight: bold;
+margin-right: 10px;
+ }
+
+ .ticket-search input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+ }
+
+ .ticket-search input[type = "submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+
+ .ticket-search input[type = "submit"] {
+    background-color:darkblue;
+    
+ }
+
+ form {
+    text-align: center;
+    background-color: #f2f2f2; /* Nền nhạt cho form */
+    padding: 20px; /* Khoảng cách nội dung */
+    border: 3px solid rgb(30, 160, 200); /* Đường viền nhẹ */
+    border-radius: 10px; /* Góc viền tròn */
+    max-width: 600px; /* Đặt giới hạn chiều rộng */
+    margin: auto; /* Căn giữa form trên trang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ footer {
+    display: flex;
+    justify-content: space-around; /* Giữ khoảng cách đều giữa các phần tử */
+    align-items: flex-start; /* Đảm bảo tất cả các phần tử bắt đầu từ cùng một điểm */
+}
+
+
+
+ 
