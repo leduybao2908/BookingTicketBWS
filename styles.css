@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Reset default margin and padding */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
@@ -407,7 +407,7 @@ margin-right: 10px;
   border: none;
   outline: none;
 }
-=======
+
 /* Reset default margin and padding */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
@@ -529,10 +529,9 @@ img {
     height: auto;
 }
 
-/* Kích thước hình ảnh nhỏ hơn */
 .places img {
-    max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
-    height: auto; /* Đảm bảo tỷ lệ khung hình */
+    max-width: 100%; /* Change this value to your desired size, e.g., 100% */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .features img {
@@ -635,7 +634,3 @@ margin-right: 10px;
     align-items: flex-start; /* Đảm bảo tất cả các phần tử bắt đầu từ cùng một điểm */
 }
 
-
-
- 
->>>>>>> Bao
