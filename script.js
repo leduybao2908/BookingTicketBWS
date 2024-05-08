@@ -10,8 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var contentWidth = content.offsetWidth;
 
     // Tính toán và thiết lập tốc độ cuộn
-    var speed = 30 * (contentWidth / marqueeWidth);
+    var speed = 10 * (contentWidth / marqueeWidth);
 
     // Thiết lập tốc độ cuộn
     marquee.setAttribute("scrollamount", speed);
 });
+
+
+
