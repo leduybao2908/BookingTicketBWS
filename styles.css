@@ -122,7 +122,7 @@ img {
 
 /* Kích thước hình ảnh nhỏ hơn */
 .places img {
-    max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
+    max-width: 100%; /* hoặc bất kỳ giá trị nào phù hợp */
     height: auto; /* Đảm bảo tỷ lệ khung hình */
 }
 
