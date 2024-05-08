@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestWebDesign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <span style="color: red;">V</span>
+            <span style="color: yellow;">K</span>
+            <span style="color: blue;">U</span>
+            Airlines
+        </h1>
+        <nav>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thanh toán vé</a></li>
+            <li><a href="#">Checkin online</a></li>
+            <li><a href="#">Hướng dẫn thanh toán</a></li>
+            <li><a href="#">Tin khuyến mãi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </nav>
+    </header>
+    <hr>
+    
+    <div class="features">
+        <div>
+            <img src="/images/support.png" alt="Hỗ trợ khách hàng 24/7">
+            <p>Hỗ trợ khách hàng 24/7</p>
+        </div>
+        <div>
+            <img src="/images/best-price.png" alt="Giá vé tốt">
+            <p>Giá vé tốt</p>
+        </div>
+        <div>
+            <img src="images/customer-service.png" alt="Dịch vụ đa dạng">
+            <p>Dịch vụ đa dạng</p>
+        </div>
+        <div>
+            <img src="images/free-shipping.png" alt="Giao vé miễn phí">
+            <p>Giao vé miễn phí</p>
+        </div>
+    </div>
+    <br>
+   
+    <br>
+    <div class="hotline" style="background-color: rgb(30, 160, 200); padding: 20px;">
+        <marquee behavior="scroll" direction="right" id="marquee">
+            <div class="plane-with-banner">
+                <p> VKU AIRLINES TICKET - GIÁ FREE - HOTLINE:
+                    <a href="https://www.facebook.com/profile.php?id=100037310812731">0123456789</a>
+                </p>
+                <img src="images/plane_banner.png" alt="Plane with banner">
+            </div>
+        </marquee>
+    </div>
+    <br>
+    <div class="ticket-search">
+        <h2>Tìm Vé Máy Bay</h2>
+        <form action="/search" method="GET">
+            <label for="from">Điểm Xuất Phát:</label>
+            <input type="text" id="from" name="from" required>
+    
+            <label for="to">Điểm Đến:</label>
+            <input type="text" id="to" name="to" required>
+    
+            <label for="date">Ngày Đi:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <input type="submit" value="Tìm">
+        </form>
+    </div>
+    <br>    
+    <div class="places-labels">
+        <h2>Những Điểm Đến Không Thể Bỏ Lỡ</h2>
+        <p>Bên dưới là một số địa điểm bạn không thể bỏ lỡ khi đi du lịch.</p>
+   
+    <div class="places">
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Hạ Long Bay, Việt Nam</span>
+                <img src="https://a.cdn-hotels.com/gdcs/production77/d1902/21336448-81d8-4643-a1b9-1545d08172de.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt="Hạ Long Bay">
+                <div class="card-data">
+                    <p class="title">Hạ Long Bay: Di sản thiên nhiên thế giới</p>
+                    <p>Hạ Long Bay nằm ở Việt Nam, được UNESCO công nhận là di sản thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi và hang động độc đáo.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Borobudur, Indonesia</span>
+                <img src="https://www.vietnambooking.com/wp-content/uploads/2018/03/du-lich-indonesia-6-3-2018-550x366.jpg"" alt="Borobudur">
+                <div class="card-data">
+                    <p class="title">Borobudur: Đền tháp tại Indonesia</p>
+                    <p>Borobudur là một ngôi đền tháp Phật giáo ở Indonesia, được xem là một trong những di sản văn hóa quan trọng nhất của Đông Nam Á.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Mount Everest, Nepal</span>
+                <img src="https://cdn.britannica.com/17/83817-120-BCD73880/Mount-Everest.jpg?s=1500x700&q=85" alt="Mount Everest">
+                <div class="card-data">
+                    <p class="title">Mount Everest: Đỉnh núi cao nhất thế giới</p>
+                    <p>Mount Everest, nằm ở biên giới giữa Nepal và Trung Quốc, là đỉnh núi cao nhất thế giới và là một trong những điểm đến hấp dẫn nhất cho những người leo núi.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Petra, Jordan</span>
+                <img src="https://e.khoahoc.tv/photos/image/2017/11/02/thanh-co-petra.jpg" alt="Petra">
+                <div class="card-data">
+                    <p class="title">Petra: Thành phố cổ của Jordan</p>
+                    <p>Petra là một thành phố cổ nằm ở Jordan, nổi tiếng với các cấu trúc đá hoa cương đặc biệt và là một trong những điểm tham quan hàng đầu ở Trung Đông.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Taj Mahal, Ấn Độ</span>
+                <img src="https://bds36.vn/upload/images/Ngoi-den-duoc-xay-dung-chu-yeu-bang-da-cam-thach-trang.jpg" alt="Taj Mahal">
+                <div class="card-data">
+                    <p class="title">Taj Mahal: Cung điện tình yêu của Ấn Độ</p>
+                    <p>Taj Mahal là một cung điện tại Agra, Ấn Độ, được xây dựng bởi hoàng đế Shah Jahan để tưởng nhớ vợ mình. Nó được coi là một trong những biểu tượng tình yêu lãng mạn nhất trên thế giới.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Kyoto, Nhật Bản</span>
+                <img src="https://blog.goway.com/globetrotting/wp-content/uploads/2018/05/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-_1017748333.jpg" alt="Kyoto">
+                <div class="card-data">
+                    <p class="title">Kyoto: Thủ đô văn hóa của Nhật Bản</p>
+                    <p>Kyoto, một thành phố ở Nhật Bản, nổi tiếng với các đền chùa cổ xưa, vườn cây cảnh quan đẹp và truyền thống văn hóa rất sâu sắc.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Jeju Island, Hàn Quốc</span>
+                <img src="https://www.foodandwine.com/thmb/sRu0hfyvMYCMFmS-pi7gYaOuzvQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Jeju-Island-Hawaii-of-Korea-FT-BLOG0723-8e127cbf94c048ffa2b59f12070af3fb.jpg" alt="Jeju Island">
+                <div class="card-data">
+                    <p class="title">Jeju Island: Đảo du lịch của Hàn Quốc</p>
+                    <p>Jeju Island, nằm ngoài khơi bờ biển Hàn Quốc, là một điểm đến du lịch phổ biến với cảnh quan thiên nhiên đẹp và các khu vực nghỉ dưỡng.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-int">
+                <span class="card__span">Cappadocia, Thổ Nhĩ Kỳ</span>
+                <img src="https://etrip4utravel.s3-ap-southeast-1.amazonaws.com/images/tinymce/2021/09/0fc9d74d-3beb-42ea-933b-10e28316b8d0.jpg" alt="Cappadocia">
+                <div class="card-data">
+                    <p class="title">Cappadocia: Kỳ quan địa chất của Thổ Nhĩ Kỳ</p>
+                    <p>Cappadocia, nằm ở miền trung Thổ Nhĩ Kỳ, nổi tiếng với các hình tháp đá và hang động đặc biệt, tạo ra một bức tranh đẹp và kỳ lạ.</p>
+                    <button class="button">Xem thêm</button>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+    
+   
+    
+    <br>
+    <div>
+        <form>
+            <h3> Đăng ký Newsletter </h3>
+            <h4> Nhận ưu đãi về vé lên đến 70% và rất nhiều khuyến mãi hấp dẫn khác hoàn toàn miễn phí</h4>
+            <input type="text" required placeholder="Email của bạn"> 
+            <input type="submit">
+        </form>
+    </div>
+    <hr>    
+    <div>
+        <footer>
+            <div>
+                <div class="contact-us">
+                    <img src="/images/contact-us.png" alt="Liên hệ chúng tôi">
+                    <h4>Liên hệ chúng tôi (hỗ trợ 24/7)</h4>
+                    <ul>
+                        <li><h5>Đặt vé máy bay: <a href="tel:01268794539">01268794539</a></h5></li>
+                        <li><h5>Đặt Tour du lịch: <a href="tel:01268794539">01268794539</a></h5></li>
+                        <li><h5>Đặt phòng khách sạn: <a href="tel:01268794539">01268794539</a></h5></li>
+                        <li><h5>Tư vấn xin visa: <a href="tel:01268794539">01268794539</a></h5></li>
+                        <li><h5>Tổng đài hỗ trợ gọi từ nước ngoài về Việt Nam: <a href="tel:01268794539">01268794539</a></h5></li>
+                    </ul>   
+                </div>
+                
+                <div class="about-us">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Tuyền thông</a></li>
+                        <li><a href="#">Các đơn vị hợp tác</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="products">
+                    <h4>Sản phẩm</h4>
+                    <ul>
+                        <li><a href="#">Vé máy bay</a></li>
+                        <li><a href="#">Tour du lịch</a></li>
+                        <li><a href="#">Đặt khách sạn</a></li>
+                        <li><a href="#">Combo tiết kiệm</a></li>
+                        <li><a href="#">Visa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="others">
+                    <h4>Khác</h4>
+                    <ul>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Xem lại đơn hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Chăm sóc khách hàng</a></li>
+                        <li><a href="#">Đăng ký nhận bảng tin</a></li>
+                        <li><a href="#">Đăng ký đối tác</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

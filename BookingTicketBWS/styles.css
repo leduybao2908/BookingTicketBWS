@@ -1,0 +1,345 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước phần tử */
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
+}
+
+/* Header styles */
+header {
+    background-color: rgb(30, 160, 200);
+    color: #ffff00;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav {
+   background-color: rgb(30, 160, 200);
+   border-radius: 10px;
+
+}
+
+nav li {
+    margin: 0 10px;
+    background-color: rgb(30, 160, 200);
+    list-style-type: none; /* Loại bỏ kiểu điểm nhấn của danh sách */
+    display: inline-block; /* Để các mục nằm trên cùng một dòng */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Canh giữa các cột */
+}
+
+.places > div {
+    width: calc(20% - 20px); /* 20% chiều rộng mỗi cột, trừ đi khoảng cách */
+    margin-bottom: 20px;
+    background-color: #fff; /* Màu nền cho mỗi ô */
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho mỗi ô */
+    border-radius: 5px;
+}
+
+.places h3 {
+    margin-bottom: 10px;
+}
+
+.places h4 {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-us, .about-us, .products, .others {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.contact-us ul, .about-us ul, .products ul, .others li {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-us h4, .about-us h4, .products h4, .others li {
+    margin-bottom: 10px;
+}
+
+.contact-us li, .about-us li, .products li , .others li{
+    margin-bottom: 5px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .places > div {
+        width: calc(50% - 20px); /* Hai cột trên mỗi hàng trên màn hình nhỏ hơn */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .places > div {
+        width: calc(100% - 20px); /* Một cột trên mỗi hàng trên màn hình rất nhỏ */
+    }
+
+    nav li {
+        display: block; /* Hiển thị các mục menu dưới dạng danh sách thay vì dạng inline */
+        margin: 5px 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Kích thước hình ảnh nhỏ hơn */
+.places img {
+    max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+}
+
+.features img {
+    max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+}
+
+.contact-us img {
+    width: 25px; /* hoặc bất kỳ giá trị nào phù hợp */
+    height: auto; /* Đảm bảo tỷ lệ khung hình */
+}
+
+.features {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-around; /* Canh giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.features > div {
+    text-align: center; /* Canh giữa nội dung */
+    flex: 1; /* Phần tử co giãn để lấp đầy không gian */
+    margin: 0 10px; /* Khoảng cách giữa các phần tử */
+}
+
+
+nav a:hover {
+    color: #ffffff; /* Đổi màu chữ khi rê chuột vào */
+    text-decoration: underline; /* Gạch chân chữ khi rê chuột vào */
+}
+
+/* Hiệu ứng hover cho mỗi phần trên navbar */
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px; /* Thêm padding để tạo box */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+ 
+div.hotline {
+    color: #ffff00; /* Đặt màu chữ để dễ đọc */
+    padding: 10px; /* Thêm khoảng cách nội dung */
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+    width: 80%; /* Chiều rộng của div hotline là 80% của cha */
+    height: 60px; /* Chiều cao của div hotline là 100px */
+    margin: 0 auto; /* Canh giữa div hotline theo chiều ngang */
+}
+
+.ticket-search {
+    background-color: rgb(30, 160, 200);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.ticket-search {
+font-weight: bold;
+ }
+
+ .ticket-search label{
+font-weight: bold;
+margin-right: 10px;
+ }
+
+ .ticket-search input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+ }
+
+ .ticket-search input[type = "submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+
+ .ticket-search input[type = "submit"] {
+    background-color:darkblue;
+    
+ }
+
+ form {
+    text-align: center;
+    background-color: #f2f2f2; /* Nền nhạt cho form */
+    padding: 20px; /* Khoảng cách nội dung */
+    border: 3px solid rgb(30, 160, 200); /* Đường viền nhẹ */
+    border-radius: 10px; /* Góc viền tròn */
+    max-width: 600px; /* Đặt giới hạn chiều rộng */
+    margin: auto; /* Căn giữa form trên trang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ footer {
+    display: flex;
+    justify-content: space-around; /* Giữ khoảng cách đều giữa các phần tử */
+    align-items: flex-start; /* Đảm bảo tất cả các phần tử bắt đầu từ cùng một điểm */
+}
+
+.plane-with-banner {
+    position: relative; /* Thiết lập vị trí tương đối để phù hợp với vị trí của máy bay */
+    white-space: nowrap; /* Ngăn chặn phần tử xuống dòng */
+    overflow: hidden; /* Ẩn nội dung vượt ra ngoài phần tử */
+    width: 100%; /* Đảm bảo phần tử có chiều rộng 100% */
+}
+.plane-with-banner img {
+    width: 100px;
+    height: auto;
+    margin-left: 0px;
+    position: absolute; /* Thiết lập vị trí tuyệt đối cho máy bay */
+   
+}
+.plane-with-banner p {
+    background-color: #91acb2;
+    padding:  10px;
+    display: inline-block; /* Đặt phần tử dưới dạng khối inline */
+}
+
+.places-labels{
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    background-image: linear-gradient(to right bottom,#06eaff, #00bfff, #1decff, #00ccff, #54f6ff);
+    background-size: 200% 200%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .card-int {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: white;
+  }
+  
+  .img {
+    width: 450%;
+    height: 175px;
+    background-color: aqua;
+    overflow: hidden;
+    
+  }
+  .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .card-data {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .card__span {
+    font-family: 'Lucida Sans' sans-serif;
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 15px;
+    background-image: linear-gradient(to right bottom, #06eaff, #00bfff, #1decff, #00ccff, #54f6ff);
+    background-size: 200% 200%;
+    border: none;
+    padding: 8px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+  }
+  
+  button:active {
+    transform: translateY(3px);
+  }
+  
+  .card:hover, button:hover {
+    animation: gradient 0.8s ease-in 1;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 200% 200%;
+    }
+  
+    100% {
+      background-position: 400% 400%;
+    }
+  }
+  .places img {
+    max-width: 100%; /* Change this value to your desired size, e.g., 100% */
+    height: auto; /* Maintain aspect ratio */
+}
