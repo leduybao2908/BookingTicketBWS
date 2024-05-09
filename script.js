@@ -42,6 +42,23 @@ prev.onclick = function() {
     reloadSlider();
 }
 
+document.getElementById("xemthembuttonTSN").addEventListener("click", function() {
+    window.location.href = "testwweb.html";
+});
+document.getElementById("xemthembuttonNB").addEventListener("click", function() {
+    window.location.href = "testwweb.html";
+});
+document.getElementById("xemthembuttonPB").addEventListener("click", function() {
+    window.location.href = "testwweb.html";
+});
+document.getElementById("xemthembuttonDNN").addEventListener("click", function() {
+    window.location.href = "testwweb.html";
+});
+document.getElementById("xemthembuttonPQ").addEventListener("click", function() {
+    window.location.href = "testwweb.html";
+});
+
+
 // Tự động chuyển slide sau 3s
 let refreshSlider = setInterval(()=> {next.click()}, 3000);
 
