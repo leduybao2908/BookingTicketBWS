@@ -633,4 +633,206 @@ margin-right: 10px;
     justify-content: space-around; /* Giữ khoảng cách đều giữa các phần tử */
     align-items: flex-start; /* Đảm bảo tất cả các phần tử bắt đầu từ cùng một điểm */
 }
-
+.slider {
+    text-align: center;
+    width: 1040px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.logo1 {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    overflow: auto;
+    margin-top: -710px;
+    margin-left: 470px;
+}
+.contentIntro6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    width: 1040px;
+    height: 250px;
+    background: linear-gradient(to top, #ffa64d,rgba(255, 255, 255, 0));
+    overflow: auto;
+    margin-left: 0px;
+    margin-top: -255px;
+}
+.contentIntro6 h2 {
+    font-size: 70px;
+}
+.contentIntro6 .content2{
+    font-size: 30px;
+    text-align: left;
+    padding-left: 190px;
+}
+.contentIntro6 .span1Intro6{
+    font-size: 35px;
+    font-weight: bold;
+}
+.contentIntro6 .span2Intro6{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contentIntro5 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 1040px;
+    height: 250px;
+    background: linear-gradient(to top, #f290af,rgba(255, 255, 255, 0));
+    overflow: auto;
+    margin-left: 0px;
+    margin-top: -255px;
+}
+.contentIntro5 table {
+    margin-left: 150px;
+    height: auto;
+}
+.contentIntro5 caption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.contentIntro5 td {
+    padding-left: 30px;
+}
+.contentIntro5 .placeIntro5{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #ffffff;
+}
+.contentIntro5 .content1Intro5{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.contentIntro5 .content2Intro5{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cb0e4a;
+    font-weight: bold;
+}
+.contentIntro12 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 1040px;
+    height: 250px;
+    background: linear-gradient(to top, #00b8e6,rgba(255, 255, 255, 0));
+    overflow: auto;
+    margin-left: 0px;
+    margin-top: -255px;
+}
+.contentIntro12 h2{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.content2Intro12 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.content3Intro12{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.content4Intro12{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+.logo2 {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    overflow: auto;
+    margin-top: -710px;
+    margin-left: -100px;
+}
+.logo3 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    overflow: auto;
+    margin-top: -710px;
+    margin-left: 500px;
+}
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+.list img {
+    width: 1040px;
+    max-width: 100vw;
+    height: 700px;
+    object-fit: cover;
+}
+.buttons {
+    position: absolute;
+    top:45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #ffffff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #ffffff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px) {
+    .slider{
+        height: 400px;
+    }
+}
