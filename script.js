@@ -81,3 +81,8 @@ document.getElementById("xemthembuttonDN").addEventListener("click", function() 
 document.getElementById("xemthembuttonPQ").addEventListener("click", function() {
     window.location.href = "sanbayPHUQUOC.html";
 });
+
+
+
+
+
