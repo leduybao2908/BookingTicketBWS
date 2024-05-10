@@ -67,17 +67,17 @@ dots.forEach((li, key) => {
 
 // bấm nút xem thêm sẽ chuyển trang sân bay
 document.getElementById("xemthembuttonTSN").addEventListener("click", function() {
-    window.location.href = "testwweb.html";
+    window.location.href = "sanbayTANSONNHAT.html";
 });
 document.getElementById("xemthembuttonNB").addEventListener("click", function() {
-    window.location.href = "testwweb.html";
+    window.location.href = "sanbayNOIBAI.html";
 });
 document.getElementById("xemthembuttonPB").addEventListener("click", function() {
-    window.location.href = "testwweb.html";
+    window.location.href = "sanbayPHUBAI.html";
 });
-document.getElementById("xemthembuttonDNN").addEventListener("click", function() {
-    window.location.href = "testwweb.html";
+document.getElementById("xemthembuttonDN").addEventListener("click", function() {
+    window.location.href = "sanbayDANANG.html";
 });
 document.getElementById("xemthembuttonPQ").addEventListener("click", function() {
-    window.location.href = "testwweb.html";
+    window.location.href = "sanbayPHUQUOC.html";
 });
