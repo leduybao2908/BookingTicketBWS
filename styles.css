@@ -839,3 +839,137 @@ margin-right: 10px;
         height: 400px;
     }
 }
+.container-places {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    margin-bottom: 50px;
+  }
+  
+  .card-places {
+    position: relative;
+    width: 254px;
+    height: 300px;
+    margin-bottom: 20px;
+    background: #f5f5f5 url('https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/07/ho-hoan-kiem-3.jpg') no-repeat center center;
+    background-size: cover; /* Hình nền sẽ đổ đầy toàn bộ phần nền */
+    border-radius: 8px;
+    color: #232323;
+    padding: 16px;
+    border: 1px solid #232323;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    transform: translateX(30px);
+}
+  .card-hidden-places {
+    display: flex;
+    transform: translateY(200%);
+    flex-direction: column;
+    gap: .5rem;
+    transition: transform .5s ease-in, opacity .3s ease-in;
+    opacity: 0;
+  }
+  
+  .card-border-places {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 1px dashed #232323;
+    border-radius: 8px;
+    z-index: -1;
+  }
+  
+  /*Hovers*/
+  .card-places:hover {
+    transform: translate(-15px, -15px);
+    border-color: #5bc0eb;
+  }
+  
+  .card-places:hover .card-hidden-places {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card-places:hover .title-places {
+    transform: translateY(200%);
+  }
+  
+  /*Text*/
+  .title-places {
+    position: absolute;
+    bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: transform .25s ease-out;
+    transform: translateX(-8px) ;
+  }
+  
+  .title-in-places {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  /*Button*/
+  .button-places {
+    display: inline-flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 24px;
+    font-weight: 600;
+    background-color: #5bc0eb;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button-places:hover {
+    background-color: #53aed4;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Màu trắng mờ với độ mờ 70% */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Mặc định ẩn lớp overlay */
+    transition: opacity .5s ease-in-out;
+}
+
+.card-places:hover .overlay {
+    opacity: 1; /* Khi di chuột vào, hiển thị lớp overlay */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 cột với độ rộng tối thiểu là 300px */
+    grid-gap: 80px; /* Khoảng cách giữa các thẻ */
+    
+}
+
+.title-places::after {
+    content: ''; /* Create a pseudo-element for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity */
+    border-radius: 8px; /* Rounded corners */
+    z-index: -1; /* Ensure the overlay is behind the text */
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    
+}
+
+.title-places:hover::after {
+    opacity: 0; /* Show the overlay on hover */
+}
