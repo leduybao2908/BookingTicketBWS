@@ -886,7 +886,7 @@ margin-right: 10px;
   
   /*Hovers*/
   .card-places:hover {
-    transform: translate(-15px, -15px);
+    /*transform: translate(-15px, -15px);*/
     border-color: #5bc0eb;
   }
   
