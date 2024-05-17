@@ -16,7 +16,10 @@ body {
 
 /* Header styles */
 header {
-    background-color: rgb(30, 160, 200);
+    background-image: url('https://www.offidocs.com/imageswebp/skybluewhitecloud.jpg.webp');
+    background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ trang */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-position: center; 
     color: #ffff00;
     padding: 10px;
     text-align: center;
@@ -24,14 +27,12 @@ header {
 }
 
 nav {
-   background-color: rgb(30, 160, 200);
    border-radius: 10px;
 
 }
 
 nav li {
     margin: 0 10px;
-    background-color: rgb(30, 160, 200);
     list-style-type: none; /* Loại bỏ kiểu điểm nhấn của danh sách */
     display: inline-block; /* Để các mục nằm trên cùng một dòng */
     padding: 10px;
@@ -41,6 +42,9 @@ nav li {
 nav a {
     color: #ffff00;
     text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+
 }
 
 /* Main content styles */
@@ -152,6 +156,8 @@ img {
 nav a:hover {
     color: #ffffff; /* Đổi màu chữ khi rê chuột vào */
     text-decoration: underline; /* Gạch chân chữ khi rê chuột vào */
+    background-color: #090292;
+    transition: background-color 0.5s ease;
 }
 
 /* Hiệu ứng hover cho mỗi phần trên navbar */
@@ -418,15 +424,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
+  background-image: url('https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/03/Hinh-nen-dien-thoai-bau-troi-xanh.jpg');
+  background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ trang */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  background-position: center; /* Đặt hình ảnh ở giữa */
+  background-attachment: fixed; 
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
 }
 
 /* Header styles */
 header {
-    background-color: rgb(30, 160, 200);
     color: #ffff00;
     padding: 10px;
     text-align: center;
@@ -434,14 +444,12 @@ header {
 }
 
 nav {
-   background-color: rgb(30, 160, 200);
    border-radius: 10px;
 
 }
 
 nav li {
     margin: 0 10px;
-    background-color: rgb(30, 160, 200);
     list-style-type: none; /* Loại bỏ kiểu điểm nhấn của danh sách */
     display: inline-block; /* Để các mục nằm trên cùng một dòng */
     padding: 10px;
