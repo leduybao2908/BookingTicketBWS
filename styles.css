@@ -173,45 +173,10 @@ div.hotline {
     margin: 0 auto; /* Canh giữa div hotline theo chiều ngang */
 }
 
-.ticket-search {
-    background-color: rgb(30, 160, 200);
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-text-align: center;
-}
 
-.ticket-search {
-font-weight: bold;
- }
 
- .ticket-search label{
-font-weight: bold;
-margin-right: 10px;
- }
 
- .ticket-search input{
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 
- }
-
- .ticket-search input[type = "submit"] {
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
- }
-
- .ticket-search input[type = "submit"] {
-    background-color:darkblue;
-    
- }
 
  form {
     text-align: center;
@@ -310,7 +275,7 @@ margin-right: 10px;
     border-radius: 15px;
   }
   
-  button {
+  button{
     width: 100%;
     margin-bottom: 30px;
     background-image: linear-gradient(to right bottom, #06eaff, #00bfff, #1decff, #00ccff, #54f6ff);
@@ -1388,4 +1353,70 @@ strong {
     transform: scale(0.75);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 100px;
+  text-align: right;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.sublabel {
+  color:gray; 
+  margin:4px; 
+  font-size: 11px;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.button-search {
+  padding: 10px 20px;
+  background-color: #0050A0;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+  line-height: 1.5;
+  padding: 10px 0.5rem 0 0.5rem;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:not([value=""]):before
+{
+  display: none;
+}
+
+.ticket-search .card-search {
+  text-align: center;
+  margin: 0 auto;
+}
+.flight-search-title {
+  text-align: center;
+  width: 100%;
 }
