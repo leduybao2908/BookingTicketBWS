@@ -16,54 +16,62 @@ document.addEventListener("DOMContentLoaded", function() {
     marquee.setAttribute("scrollamount", speed);
 });
 
-let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+document.addEventListener('DOMContentLoaded', function() {
+    let list = document.querySelector('.slider .list');
+    let items = document.querySelectorAll('.slider .list .item');
+    let dots = document.querySelectorAll('.slider .dots li');
+    let prev = document.getElementById('prev');
+    let next = document.getElementById('next');
 
-let active = 0;
-let lengthItemms = items.length-1;
+    let active = 0;
+    let lengthItems = items.length - 1;
 
-next.onclick = function() {
-    if(active + 1 > lengthItemms){
-        active = 0;
-    }else {
-        active = active + 1;
-    }
-    reloadSlider();
-}
-prev.onclick = function() {
-    if(active - 1 < 0){
-        active = lengthItemms;
-    }else{
-        active = active - 1;
-    }
-    reloadSlider();
-}
-
-// Tự động chuyển slide sau 3s
-let refreshSlider = setInterval(()=> {next.click()}, 3000);
-
-function reloadSlider() {
-    let checkLeft = items[active].offsetLeft;
-    list.style.left = -checkLeft + 'px';
-
-    // xóa hiệu ứng active của li cũ
-    let lastActiveDot = document.querySelector('.slider .dots li.active');
-    lastActiveDot.classList.remove('active');
-    
-    // active cho li mới
-    dots[active].classList.add('active');
-    clearInterval(refreshSlider);
-    let refreshSlider = setInterval(()=> {next.click()}, 3000);
-}
-dots.forEach((li, key) => {
-    li.addEventListener('click', function(){
-        active = key;
+    next.onclick = function() {
+        if (active + 1 > lengthItems) {
+            active = 0;
+        } else {
+            active = active + 1;
+        }
         reloadSlider();
-    })
-})
+    }
+
+    prev.onclick = function() {
+        if (active - 1 < 0) {
+            active = lengthItems;
+        } else {
+            active = active - 1;
+        }
+        reloadSlider();
+    }
+
+    // Tự động chuyển slide sau 3s
+    let refreshSlider = setInterval(() => {
+        let formVisible = document.querySelector('.formBooking[style*="display: block"]');
+        if (!formVisible) {
+            next.click();
+        }
+    }, 3000);
+
+    function reloadSlider() {
+        let checkLeft = items[active].offsetLeft;
+        list.style.left = -checkLeft + 'px';
+
+        // xóa hiệu ứng active của li cũ
+        let lastActiveDot = document.querySelector('.slider .dots li.active');
+        if (lastActiveDot) lastActiveDot.classList.remove('active');
+
+        // active cho li mới
+        dots[active].classList.add('active');
+    }
+
+    dots.forEach((li, key) => {
+        li.addEventListener('click', function() {
+            active = key;
+            reloadSlider();
+        });
+    });
+});
+
 
 // bấm nút xem thêm sẽ chuyển trang sân bay
 document.getElementById("xemthembuttonTSN").addEventListener("click", function() {
@@ -99,3 +107,4 @@ function dynamicDropDown(listIndex) {
       document.getElementById("children").options[i] = new Option(i.toString(), i);
     }
   }
+

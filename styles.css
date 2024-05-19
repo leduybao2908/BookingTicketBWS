@@ -817,6 +817,7 @@ margin-right: 10px;
     width: 190px;
     height: 254px;
     margin-bottom: 50px;
+    margin-left: 40px;
   }
   
   .card-places {
@@ -928,9 +929,9 @@ margin-right: 10px;
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 cột với độ rộng tối thiểu là 300px */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 3 cột với độ rộng tối thiểu là 300px */
     grid-gap: 80px; /* Khoảng cách giữa các thẻ */
-    
+    max-width: 1700px;
 }
 
 .title-places::after {
@@ -953,21 +954,20 @@ margin-right: 10px;
 }
 
 .formBooking {
-    position: relative;
-    display: none;
-    top: -150%;
-    border-radius: 20px;
-    padding: 2.2rem;
-    width: 320px;
-    background: linear-gradient(14deg, rgba(11, 11, 12, 0.8) 0%, rgba(24, 24, 65, 0.7) 66%, 
-              rgb(20, 76, 99) 100%), radial-gradient(circle, rgba(2,0,36, 0.5) 0%, 
-              rgba(32, 15, 53, 0.2) 65%, rgba(11, 15, 15, 0.9) 100%);
-    border: 2px solid #fff;
-    -webkit-box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
-    box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
-    overflow: hidden;
-    z-index: +1;
-  }
+  position: relative;
+  display: none;
+  top: -150%;
+  border-radius: 20px;
+  padding: 25px;
+  background: linear-gradient(14deg, rgba(11, 11, 12, 0.8) 0%, rgba(24, 24, 65, 0.7) 66%, 
+            rgb(20, 76, 99) 100%), radial-gradient(circle, rgba(2,0,36, 0.5) 0%, 
+            rgba(32, 15, 53, 0.2) 65%, rgba(11, 15, 15, 0.9) 100%);
+  border: 2px solid #fff;
+  -webkit-box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
+  box-shadow: rgba(0,212,255) 0px 0px 50px -15px;
+  overflow: hidden;
+  z-index: +1;
+}
   
   /*------input and submit section-------*/
   
@@ -976,7 +976,7 @@ margin-right: 10px;
     margin-top: 15px;
   }
   
-  .input-container input, .form button {
+  .input-container .input-name, .input-mail, .input-phone, .form button {
     width: 100%;
     outline: none;
     border: 2px solid #ffffff;
@@ -984,16 +984,17 @@ margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .input-container input {
+  .input-container .input-name, .input-mail, .input-phone {
     background-color: #fff;
     align-items: center;
-    padding: 6px;
+    padding: 0px;
     font-size: 20px;
     line-height: 30px;
     width: 290px;
     height: 40px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    margin-left: -10px;
   }
   .input-name:focus::placeholder {
     opacity: 0;
@@ -1030,7 +1031,7 @@ margin-right: 10px;
   /*--------header section-----------*/
   
   .form-title {
-    font-size: 25px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     top:-10%;
     left:0%;
@@ -1065,7 +1066,7 @@ margin-right: 10px;
   }
   ::placeholder {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
   }
   @keyframes flickering {
     0%,
@@ -1200,21 +1201,21 @@ margin-right: 10px;
     animation-duration: 1.6s;
   }  
   .container2 {
+    width: 320px;
+    height: 40px;
     margin-top: 15px;
+    margin-left: -15px;
     display: flex;
     align-items: center;
 }
 
-.container2 label {
-    margin-right: 10px; /* Điều chỉnh khoảng cách giữa label và input */
-}
-
-.container2 label, .container2 input, .container2 p {
+.container2 input, .container2 p {
+  text-align: left;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 21px;
+  font-size: 22px;
   padding: 5px;
 }
-.container2 label, p {
+.container2 p {
   color: #fff;
 }
 .btn {
