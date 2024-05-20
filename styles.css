@@ -281,7 +281,7 @@ div.hotline {
     border-radius: 15px;
   }
   
-  button{
+  .btn--card{
     width: 100%;
     margin-bottom: 30px;
     background-image: linear-gradient(to right bottom, #06eaff, #00bfff, #1decff, #00ccff, #54f6ff);
@@ -295,11 +295,11 @@ div.hotline {
     transition: transform 0.1s ease-in;
   }
   
-  button:active {
+  .btn--card:active {
     transform: translateY(3px);
   }
   
-  .card:hover, button:hover {
+  .card:hover, .btn--card:hover {
     animation: gradient 0.8s ease-in 1;
   }
   
