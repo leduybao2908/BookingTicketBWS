@@ -142,7 +142,7 @@
                 formBooking.style.top = rect.top + window.scrollY + 'px'; // Thêm window.scrollY để điều chỉnh vị trí form theo trang
                 formBooking.style.left = rect.left + 'px';
                 formBooking.style.width = '80%'; // Đặt chiều rộng tùy chỉnh
-                formBooking.style.maxWidth = '280px'; // Đặt chiều rộng tối đa
+                formBooking.style.maxWidth = '320px'; // Đặt chiều rộng tối đa
                 formBooking.style.display = 'block';
                 formBooking.style.zIndex = 1000; // Đảm bảo form hiển thị phía trên
     
