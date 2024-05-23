@@ -25,12 +25,12 @@ header {
     border-radius: 10px;
 }
 
-nav {
+.header--nav {
    border-radius: 10px;
 
 }
 
-nav li {
+.header--nav li {
     margin: 0 10px;
     list-style-type: none; /* Loại bỏ kiểu điểm nhấn của danh sách */
     display: inline-block; /* Để các mục nằm trên cùng một dòng */
@@ -38,7 +38,7 @@ nav li {
     border-radius: 10px;
 }
 
-nav a {
+.header--nav a {
     color: #ffff00;
     text-decoration: none;
     padding: 15px 25px;
@@ -136,7 +136,7 @@ nav a {
         width: calc(100% - 20px); /* Một cột trên mỗi hàng trên màn hình rất nhỏ */
     }
 
-    nav li {
+    .header--nav li {
         display: block; /* Hiển thị các mục menu dưới dạng danh sách thay vì dạng inline */
         margin: 5px 0;
     }
@@ -171,15 +171,15 @@ img {
 }
 
 
-nav a:hover {
+.header--nav a:hover {
     color: #ffffff; /* Đổi màu chữ khi rê chuột vào */
     text-decoration: underline; /* Gạch chân chữ khi rê chuột vào */
     background-color: #090292;
     transition: background-color 0.5s ease;
 }
 
-/* Hiệu ứng hover cho mỗi phần trên navbar */
-nav li {
+/* Hiệu ứng hover cho mỗi phần trên .header--navbar */
+.header--nav li {
     display: inline-block;
     margin: 0 10px;
     padding: 10px 20px; /* Thêm padding để tạo box */
@@ -421,12 +421,12 @@ header {
     border-radius: 10px;
 }
 
-nav {
+.header--nav {
    border-radius: 10px;
 
 }
 
-nav li {
+.header--nav li {
     margin: 0 10px;
     list-style-type: none; /* Loại bỏ kiểu điểm nhấn của danh sách */
     display: inline-block; /* Để các mục nằm trên cùng một dòng */
@@ -434,7 +434,7 @@ nav li {
     border-radius: 10px;
 }
 
-nav a {
+.header--nav a {
     color: #ffff00;
     text-decoration: none;
 }
@@ -481,7 +481,7 @@ nav a {
         width: calc(100% - 20px); /* Một cột trên mỗi hàng trên màn hình rất nhỏ */
     }
 
-    nav li {
+    .header--nav li {
         display: block; /* Hiển thị các mục menu dưới dạng danh sách thay vì dạng inline */
         margin: 5px 0;
     }
@@ -516,12 +516,12 @@ img {
 }
 
 
-nav a:hover {
+.header--nav a:hover {
     color: #ffffff; /* Đổi màu chữ khi rê chuột vào */
     text-decoration: underline; /* Gạch chân chữ khi rê chuột vào */
 }
 
-/* Hiệu ứng hover cho mỗi phần trên navbar */
+/* Hiệu ứng hover cho mỗi phần trên .header--navbar */
 nav li {
     display: inline-block;
     margin: 0 10px;
