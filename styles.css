@@ -74,31 +74,55 @@ nav a {
 }
 
 /* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: left;
-}
+    footer {
+            background-color: #333;
+            color: #d3d3d3;
+            padding: 40px 0;
+            background-image: url('https://t3.ftcdn.net/jpg/05/00/76/76/360_F_500767676_mZzz2hyDsFsiZksszm6dSfgHX6cI3M9T.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-.contact-us, .about-us, .products, .others {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-}
+        footer h4 {
+            color: #ff9800;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
 
-.contact-us ul, .about-us ul, .products ul, .others li {
-    list-style: none;
-    padding: 0;
-}
+        footer a {
+            color: #d3d3d3;
+            text-decoration: none;
+        }
 
-.contact-us h4, .about-us h4, .products h4, .others li {
-    margin-bottom: 10px;
-}
+        footer a:hover {
+            color: #ff9800;
+            text-decoration: underline;
+        }
 
-.contact-us li, .about-us li, .products li , .others li{
-    margin-bottom: 5px;
-}
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 767px) {
+            .footer-section {
+                text-align: center;
+            }
+
+            .footer-section ul {
+                padding-left: 0;
+            }
+        }
+ 
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
@@ -131,11 +155,6 @@ img {
 
 .features img {
     max-width: 50px; /* hoặc bất kỳ giá trị nào phù hợp */
-    height: auto; /* Đảm bảo tỷ lệ khung hình */
-}
-
-.contact-us img {
-    width: 25px; /* hoặc bất kỳ giá trị nào phù hợp */
     height: auto; /* Đảm bảo tỷ lệ khung hình */
 }
 
@@ -177,11 +196,6 @@ div.hotline {
     height: 60px; /* Chiều cao của div hotline là 100px */
     margin: 0 auto; /* Canh giữa div hotline theo chiều ngang */
 }
-
-
-
-
-
 
  form {
     text-align: center;
@@ -454,32 +468,6 @@ nav a {
     line-height: 1.5;
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: left;
-}
-
-.contact-us, .about-us, .products, .others {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-}
-
-.contact-us ul, .about-us ul, .products ul, .others li {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-us h4, .about-us h4, .products h4, .others li {
-    margin-bottom: 10px;
-}
-
-.contact-us li, .about-us li, .products li , .others li{
-    margin-bottom: 5px;
-}
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
@@ -514,10 +502,6 @@ img {
     height: auto; /* Đảm bảo tỷ lệ khung hình */
 }
 
-.contact-us img {
-    width: 25px; /* hoặc bất kỳ giá trị nào phù hợp */
-    height: auto; /* Đảm bảo tỷ lệ khung hình */
-}
 
 .features {
     display: flex; /* Sử dụng flexbox */
@@ -603,11 +587,6 @@ margin-right: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  }
 
- footer {
-    display: flex;
-    justify-content: space-around; /* Giữ khoảng cách đều giữa các phần tử */
-    align-items: flex-start; /* Đảm bảo tất cả các phần tử bắt đầu từ cùng một điểm */
-}
 .slider {
     text-align: center;
     width: 1040px;
@@ -1665,5 +1644,4 @@ body {
 .spinner--right [data-type="peru"] .content__left {
   background-image: none;
 }
-
 
