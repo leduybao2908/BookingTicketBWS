@@ -1223,7 +1223,7 @@ margin-right: 10px;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
 }
-.formBooking strong {
+strong {
   z-index: 2;
   font-family: 'Avalors Personal Use';
   font-size: 25px;
@@ -1723,10 +1723,119 @@ li a:hover{
   bottom: 0;
   z-index: -1;
 }
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header--navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header--logo {
+  height: 70px;
+}
+
+.header--navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.header--navbar li {
+  margin-left: 20px;
+}
+
+.header--navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.video-content {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.header--content p {
+  font-size: 1rem;
+}
+
 @media(min-aspect-ratio: 16/9){
   .banner video{
       width: 100%;
       height: auto;
+  }
+}
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+  .header--navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .header--navbar ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .header--navbar li {
+      margin: 10px 0;
+  }
+
+  .header--content {
+      padding: 20px;
+  }
+
+  .video-content {
+      font-size: 1.5rem;
+  }
+
+  .header--content p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header--navbar {
+      padding: 10px;
+  }
+
+  .header--logo {
+      height: 70px;
+  }
+
+  .video-content {
+      font-size: 1.2rem;
+  }
+
+  .header--content p {
+      font-size: 0.8rem;
   }
 }
 
@@ -1744,132 +1853,4 @@ li a:hover{
   text-align: left;
   margin-left: 80px;
   margin-top: 30px;
-}
-.testimonials-heading
-{
-  font-family: poppins;
-  box-sizing: border-box;
-}
-#testimonials{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-
-}
-.testimonials-heading{
-  letter-spacing: 1px;
-  margin: 30px 0px;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.testimonials-heading h1{
-  font-size: 2.2rem;
-  font-weight: 500;
-  background-color: #202020;
-  color: #FFFFFF;
-  padding: 10px 20px;
-}
-.testimonials-heading span{
-  font-size: 1.3rem;
-  color: #252525;
-  margin-bottom: 10px ;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.testimonial-box-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.testimonial-box{
-  width: 500px;
-  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin: 15px;
-  cursor: pointer;
-  background-color: #FFFFFF;
-}
-.profile-img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-
-  overflow: hidden;
-}
-.profile-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.profile{
-  display: flex;
-  align-items: center;
-}
-.name-user{
-  display: flex;
-  flex-direction: column;
-}
-.name-user strong{
-  color: #3d3d3d;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-}
-.name-user span{
-  color: #979797;
-  font-size: 0.8rem;
-  
-}
-.reviews{
-  color: #f9d000;
-}
-.box-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.client-comment{
-  font-size: 0.9rem;
-  color:#4b4b4b;
-}
-.testimonial-box:hover{
-  transform: translateY(-10px);
-  transition: all ease 0.3s ;
-}
-
-@media(max-width:1060px){
-  .testimonial-box{
-      width:45%;
-      padding: 10px;
-  }
-}
-@media(max-width:790px){
-  .testimonial-box{
-      width:100%;
-  }
-  .testimonial-heading h1{
-      font-size: 1.4rem;
-  }
-}
-@media(max-width:340px){
-  .box-top{
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-  }
-  .reviews{
-      margin-top: 10px;
-  }
-}
-::selection{
-  color: #ffffff;
-  background-color: #252525;
 }
