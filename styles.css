@@ -1223,7 +1223,7 @@ margin-right: 10px;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
 }
-.formBooking strong {
+strong {
   z-index: 2;
   font-family: 'Avalors Personal Use';
   font-size: 25px;
@@ -1723,10 +1723,119 @@ li a:hover{
   bottom: 0;
   z-index: -1;
 }
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header--navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header--logo {
+  height: 70px;
+}
+
+.header--navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.header--navbar li {
+  margin-left: 20px;
+}
+
+.header--navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.video-content {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.header--content p {
+  font-size: 1rem;
+}
+
 @media(min-aspect-ratio: 16/9){
   .banner video{
       width: 100%;
       height: auto;
+  }
+}
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+  .header--navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .header--navbar ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .header--navbar li {
+      margin: 10px 0;
+  }
+
+  .header--content {
+      padding: 20px;
+  }
+
+  .video-content {
+      font-size: 1.5rem;
+  }
+
+  .header--content p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header--navbar {
+      padding: 10px;
+  }
+
+  .header--logo {
+      height: 70px;
+  }
+
+  .video-content {
+      font-size: 1.2rem;
+  }
+
+  .header--content p {
+      font-size: 0.8rem;
   }
 }
 
