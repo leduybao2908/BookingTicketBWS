@@ -1223,7 +1223,7 @@ margin-right: 10px;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
 }
-strong {
+.formBooking strong {
   z-index: 2;
   font-family: 'Avalors Personal Use';
   font-size: 25px;
